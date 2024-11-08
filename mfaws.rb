@@ -5,20 +5,20 @@
 class Mfaws < Formula
   desc "AWS multi-factor authentication manager"
   homepage "https://github.com/pbar1/mfaws"
-  version "1.0.9"
+  version "1.0.10-rc2"
 
   on_macos do
     on_intel do
-      url "https://github.com/pbar1/mfaws/releases/download/1.0.9/mfaws_Darwin_x86_64.tar.gz"
-      sha256 "029458fdcbdfe1ff309ca8d335056c2186dafcb8af605e3b0545012527415b12"
+      url "https://github.com/pbar1/mfaws/releases/download/1.0.10-rc2/mfaws_Darwin_x86_64.tar.gz"
+      sha256 "ef1cdf26796ffbd2fb26ed96093b39583b292bd8b11e7ccf33893af338ec4ae7"
 
       def install
         bin.install "mfaws"
       end
     end
     on_arm do
-      url "https://github.com/pbar1/mfaws/releases/download/1.0.9/mfaws_Darwin_arm64.tar.gz"
-      sha256 "7fa26ef68bcd821888ba5d00c22ee5fe65c2e84dda209ff75bb0b60846cadd4a"
+      url "https://github.com/pbar1/mfaws/releases/download/1.0.10-rc2/mfaws_Darwin_arm64.tar.gz"
+      sha256 "7bdef879281e1309da66a4dcd701358f2ea32e06cf11a19e46d680cfab424d21"
 
       def install
         bin.install "mfaws"
@@ -29,8 +29,8 @@ class Mfaws < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/pbar1/mfaws/releases/download/1.0.9/mfaws_Linux_x86_64.tar.gz"
-        sha256 "298a6d6ad8852df0b7567dd62e65742d6dc5cc45664be07fc2fd924ec8a8d2e3"
+        url "https://github.com/pbar1/mfaws/releases/download/1.0.10-rc2/mfaws_Linux_x86_64.tar.gz"
+        sha256 "b30b0cfc1f540fe94888c4a148b6d4ff97b5ee86ee70e02db1d6c9453d55dfa8"
 
         def install
           bin.install "mfaws"
@@ -39,8 +39,8 @@ class Mfaws < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/pbar1/mfaws/releases/download/1.0.9/mfaws_Linux_arm64.tar.gz"
-        sha256 "ad7a6ce3a1e8a5dc7e533fed10b543ff90f72592682cf4ddcda7bcec27a64b60"
+        url "https://github.com/pbar1/mfaws/releases/download/1.0.10-rc2/mfaws_Linux_arm64.tar.gz"
+        sha256 "90840588f688e5451e4355a00be04406423692b11232dd08bb4ad02011c5e401"
 
         def install
           bin.install "mfaws"
