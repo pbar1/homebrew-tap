@@ -10,7 +10,7 @@ class Mfaws < Formula
   on_macos do
     on_intel do
       url "https://github.com/pbar1/mfaws/releases/download/1.0.10-rc3/mfaws_Darwin_x86_64.tar.gz"
-      sha256 "1aad60ecb5ccb571930fa52cdb7f7ad21bf7b767f7286c180c85b89a1d023327"
+      sha256 "761ee374b9065c3259f11081082db6e33ca6dad58db3c8cf49a22e6e6f800fc0"
 
       def install
         bin.install "mfaws"
@@ -18,7 +18,7 @@ class Mfaws < Formula
     end
     on_arm do
       url "https://github.com/pbar1/mfaws/releases/download/1.0.10-rc3/mfaws_Darwin_arm64.tar.gz"
-      sha256 "625906a7e3ca09b2c38c8baa0852321e1bfbda56e8f8ed26c9f5c82435c3d330"
+      sha256 "4f0b1622bedd13cfd48f605536c82d73b3fe828a40e15a96bf4dded765ea28c2"
 
       def install
         bin.install "mfaws"
@@ -30,7 +30,7 @@ class Mfaws < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/pbar1/mfaws/releases/download/1.0.10-rc3/mfaws_Linux_x86_64.tar.gz"
-        sha256 "d24fa6c5441c5c772339bb0666f4dd65b8c0013a3979d8237ae5a6c91b0436d4"
+        sha256 "82c4490b1d5dbd1543e1a57323069849c87aada0ce748b15543695ca0d20dc7a"
 
         def install
           bin.install "mfaws"
@@ -40,7 +40,7 @@ class Mfaws < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/pbar1/mfaws/releases/download/1.0.10-rc3/mfaws_Linux_arm64.tar.gz"
-        sha256 "034409216eee111d7269b7711bbe8cf0f56115f6fb2c5f0a69b4f4f87c7bc5b0"
+        sha256 "e5ffab0cc165801a606c41e78a7ffbe6bbe559b4bcfd10249d88c7377b43ccd7"
 
         def install
           bin.install "mfaws"
